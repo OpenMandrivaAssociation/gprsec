@@ -16,7 +16,6 @@ Group:			Communications
 URL:			http://www.gprsec.hu
 
 Source0:		http://www.gprsec.hu/downloads/%{realnam}_%{realver}.tar.bz2
-BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 BuildArch:		noarch
 
 Requires:		perl-Gtk2
