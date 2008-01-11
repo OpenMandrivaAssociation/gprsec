@@ -64,17 +64,6 @@ cp -R data/share/%{name}/tools %{buildroot}%{_datadir}/%{name}/
 
 # Creating menu entry
 
-install -d -m 755 %{buildroot}%{_menudir}
-cat >%{buildroot}%{_menudir}/%{name} <<EOF
-?package(%{name}):\
-	command="%{_bindir}/%{name}"\
-	icon="%{name}.png"\
-	needs="X11"\
-	section="System/Configuration/Networking"\
-	title="GPRS Easy Connect"\
-	longtitle="GPRS Cellular Connection" \
-        xdg="true"
-EOF
 
 mkdir -p %{buildroot}%{_datadir}/applications
 cat > %{buildroot}%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -109,7 +98,6 @@ rm -rf %{buildroot}
 %defattr(-,root,root,0755) 
 %doc data/share/gprsec/README data/share/gprsec/COPYING data/share/gprsec/AUTHORS data/share/gprsec/history data/share/gprsec/version
 %doc documentation.html
-%{_menudir}/%{name}
 %{_datadir}/applications/mandriva-%{name}.desktop
 %{_bindir}/%name
 %{_miconsdir}/%name.png
