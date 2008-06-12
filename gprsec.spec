@@ -88,11 +88,15 @@ convert -resize 48x48 data/share/gprsec/images/icons/gprsec.png %buildroot/%_lic
 %clean 
 rm -rf %{buildroot} 
 
+%if %mdkversion < 200900
 %post
 %update_menus
+%endif
 
+%if %mdkversion < 200900
 %postun
 %clean_menus
+%endif
 
 %files
 %defattr(-,root,root,0755) 
