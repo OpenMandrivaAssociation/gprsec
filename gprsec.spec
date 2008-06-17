@@ -4,7 +4,7 @@
 %define realnam		GPRS_Easy_Connect
 %define version		3.0.0
 %define realver		300
-%define release		%mkrel 1
+%define release		%mkrel 2
 %define Summary		GUI to simplify GPRS cellular data connection
 
 Summary:		%{Summary}
@@ -18,6 +18,7 @@ URL:			http://www.gprsec.hu
 Source0:		http://www.gprsec.hu/downloads/%{realnam}_%{realver}.tar.bz2
 BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot 
 BuildArch:		noarch
+BuildRequires:	imagemagick
 
 Requires:		perl-Gtk2
 Requires:		perl-Glib
