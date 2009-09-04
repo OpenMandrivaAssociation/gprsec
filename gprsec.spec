@@ -4,7 +4,7 @@
 %define realnam		GPRS_Easy_Connect
 %define version		3.0.0
 %define realver		300
-%define release		%mkrel 3
+%define release		%mkrel 4
 %define Summary		GUI to simplify GPRS cellular data connection
 
 Summary:		%{Summary}
