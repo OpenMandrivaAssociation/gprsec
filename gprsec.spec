@@ -111,3 +111,44 @@ rm -rf %{buildroot}
 %{_datadir}/%{name}/*
 %{_datadir}/themes/*
 
+
+
+%changelog
+* Fri Dec 10 2010 Oden Eriksson <oeriksson@mandriva.com> 3.0.0-5mdv2011.0
++ Revision: 619249
+- the mass rebuild of 2010.0 packages
+
+* Fri Sep 04 2009 Thierry Vignaud <tv@mandriva.org> 3.0.0-4mdv2010.0
++ Revision: 429296
+- rebuild
+
+* Tue Jul 22 2008 Thierry Vignaud <tv@mandriva.org> 3.0.0-3mdv2009.0
++ Revision: 240222
+- rebuild
+- BuildRequires imagemagick for convert
+- drop old menu
+- kill re-definition of %%buildroot on Pixel's request
+- import gprsec
+
+  + Pixel <pixel@mandriva.com>
+    - rpm filetriggers deprecates update_menus/update_scrollkeeper/update_mime_database/update_icon_cache/update_desktop_database/post_install_gconf_schemas
+
+  + Olivier Blin <oblin@mandriva.com>
+    - restore BuildRoot
+
+
+* Fri Jun 30 2006 Austin Acton <austin@mandriva.org> 3.0.0-1mdv2007.0
+- from Dovix <dovix2003@yahoo.com> :
+  - rpmlint & spec cleanup
+  - relocate to system network configuration menu
+  - migrate to xdg menu
+
+* Tue Apr 29 2003 Austin Acton <aacton@yorku.ca> 1.2.3-2mdk
+- allow to run as non-root; use /var/gprsec for log and config files
+
+* Tue Apr 29 2003 Austin Acton <aacton@yorku.ca> 1.2.3-1mdk
+- 1.2.3
+
+* Sun Mar 30 2003 Austin Acton <aacton@yorku.ca> 1.2.2-1mdk
+- initial package
+
