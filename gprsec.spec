@@ -13,7 +13,7 @@ Version:		%{version}
 Release:		%{release}
 License:		GPL
 Group:			Communications
-URL:			http://www.gprsec.hu
+URL:			https://www.gprsec.hu
 
 Source0:		http://www.gprsec.hu/downloads/%{realnam}_%{realver}.tar.bz2
 BuildRoot:		%{_tmppath}/%{name}-%{version}-%{release}-buildroot 
